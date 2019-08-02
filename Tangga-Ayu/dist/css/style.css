@@ -1,0 +1,44 @@
+body{
+  margin: 0;
+}
+.w-200 {
+  width: 200px;
+}
+#login-wrapper{
+  position: absolute;
+  width: 350px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.struk-font {
+  font-family: Consolas,monaco,monospace;
+}
+
+@media (max-width: 576px){
+  #login-wrapper{
+    width: 80%;
+  }
+}
+
+@media screen {
+  #printSection {
+    display: none;
+  }
+}
+
+@media print {
+  body * {
+    visibility:hidden;
+  }
+  #printSection, #printSection * {
+    visibility:visible;
+  }
+  #printSection {
+    position:absolute;
+    left:0;
+    top:0;
+  }
+}
